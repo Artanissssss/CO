@@ -189,7 +189,10 @@ class TypeChecker:
                 var_type = self.symbol_table.get(node.lexeme)
                 if var_type:
                     return var_type
-            return 'num'  # Default for now
+                else:
+                    # Undefined variable
+                    return 'TYPE_ERROR'
+            return 'num'  # Default for lower levels
         
         else:
             return 'NA'
