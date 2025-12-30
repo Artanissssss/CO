@@ -9,7 +9,7 @@ WARNING:
   So please make sure your import statement is correct
 */
 
-import java.util.regex;
+// import java.util.regex.Pattern; // Example: uncomment if needed for regex operations
 
 public class Main {
 	public static void main (String[] args) {
