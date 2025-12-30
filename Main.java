@@ -2,7 +2,7 @@
 WARNING:
 - You are not allowed to use any external libraries other than the standard library
 - Please do not modify the file name of the entry file 'Main.java'
-- Our autograder will test your code by runing 
+- Our autograder will test your code by running 
 	'javac *.java'
 	'java Main <test_file>'
   The current directory will be the same directory as the entry file

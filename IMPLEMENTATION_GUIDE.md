@@ -22,13 +22,14 @@ This guide provides step-by-step instructions for implementing the mathematical 
 
 ### Step 3: Run the Sample Implementation
 ```bash
-# Make the sample executable runnable
+# Linux/macOS: Make the sample executable runnable
 chmod +x sample_linux.exe
-
-# Run with a test case
 ./sample_linux.exe l1t1
 
-# Examine the generated JSON files
+# Windows: Use the Windows executable
+sample_windows.exe l1t1
+
+# Examine the generated JSON files (use 'type' instead of 'cat' on Windows)
 cat l1t1_lexer.json
 cat l1t1_parse.json
 cat l1t1_type.json

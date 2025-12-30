@@ -232,11 +232,11 @@ Let num , num >> bool eq maps a , b to
 ## Language Limitations
 
 1. **No negative number syntax**: Use `0 - x` instead of `-x`
-2. **No subtraction operator**: Must implement via function (see subtract above)
-3. **No division operator**: Must implement via recursive function
-4. **Limited relational operators**: Only `<` and `=` are built-in
+2. **No subtraction operator**: Must implement via function (see the `subtract` function in [Advanced Examples](#advanced-examples) section)
+3. **No division operator**: Must implement via recursive function (see `div` and `divhp` examples in the `ultra` test file)
+4. **Limited relational operators**: Only `<` and `=` are built-in (see `les`, `eq`, `gtr` functions in [Advanced Examples](#advanced-examples))
 5. **No string type**: Only numbers and booleans
-6. **No loops**: Use recursion instead
+6. **No loops**: Use recursion instead (see function examples in Level 4)
 7. **No mutable state**: All values are immutable
 
 ## Error Conditions
