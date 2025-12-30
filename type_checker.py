@@ -6,8 +6,39 @@ class TypeChecker:
     
     def check(self):
         """Perform type checking on the parse tree"""
+        # For Level 3+, we need to process declarations first
+        if self.level >= 3:
+            self._collect_declarations(self.parse_tree)
+        
         self._annotate_types(self.parse_tree)
         return self.parse_tree
+    
+    def _collect_declarations(self, node):
+        """Collect variable and function declarations into symbol table"""
+        if node is None:
+            return
+        
+        # Check if this is a declaration node
+        if node.name == 'D':
+            # D -> Let T id be E .
+            var_type = None
+            var_name = None
+            
+            for child in node.children:
+                if child.name == 'T':
+                    # Get the type (num or bool)
+                    for type_child in child.children:
+                        if type_child.name in ['num', 'bool']:
+                            var_type = type_child.name
+                elif child.name == 'id':
+                    var_name = child.lexeme
+            
+            if var_name and var_type:
+                self.symbol_table[var_name] = var_type
+        
+        # Recursively process children
+        for child in node.children:
+            self._collect_declarations(child)
     
     def _annotate_types(self, node):
         """Recursively annotate types on parse tree nodes"""

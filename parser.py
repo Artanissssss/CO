@@ -56,7 +56,14 @@ class Parser:
     def _load_parsing_table(self, filename):
         """Load LR parsing table from CSV file"""
         with open(filename, 'r', encoding='utf-8') as f:
-            reader = csv.reader(f, delimiter='\t')
+            # Detect delimiter by checking first line
+            first_line = f.readline()
+            f.seek(0)
+            
+            # Use comma if present, otherwise tab
+            delimiter = ',' if ',' in first_line else '\t'
+            
+            reader = csv.reader(f, delimiter=delimiter)
             
             # Skip first header row ("State", "ACTION", "GOTO", etc.)
             next(reader)
@@ -68,7 +75,10 @@ class Parser:
                 if not row or not row[0].strip():
                     continue
                 
-                state = int(row[0].strip())
+                try:
+                    state = int(row[0].strip())
+                except ValueError:
+                    continue
                 
                 # Process each column
                 for i, cell in enumerate(row[1:], 1):
