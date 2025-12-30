@@ -27,6 +27,9 @@ if __name__ == '__main__':
         level = 3
     elif 'l4' in file_name or 'L4' in file_name:
         level = 4
+    elif file_name in ['bpt1', 'brt1', 'ultra']:
+        # Bonus tests are Level 4
+        level = 4
 
     with open(file_name, 'r') as f:
         # Read file to string
