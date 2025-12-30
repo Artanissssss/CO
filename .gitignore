@@ -1,0 +1,24 @@
+# Build artifacts
+*.exe
+*.o
+*.out
+*.class
+__pycache__/
+*.pyc
+
+# Generated output files
+*_lexer.json
+*_parse.json
+*_type.json
+*_ast.json
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
