@@ -1,0 +1,52 @@
+{
+  "name": "Z",
+  "children": [
+    {
+      "name": "L",
+      "children": [
+        {
+          "name": "C",
+          "children": [
+            {
+              "name": "Compute",
+              "lexeme": "Compute"
+            }
+,            {
+              "name": "E",
+              "children": [
+                {
+                  "name": "A",
+                  "children": [
+                    {
+                      "name": "M",
+                      "children": [
+                        {
+                          "name": "U",
+                          "children": [
+                            {
+                              "name": "P",
+                              "children": [
+                                {
+                                  "name": "num_lit",
+                                  "lexeme": "1"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+,            {
+              "name": ".",
+              "lexeme": "."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

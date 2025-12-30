@@ -1,0 +1,63 @@
+{
+  "name": "Z",
+  "type": "NA",
+  "children": [
+    {
+      "name": "L",
+      "type": "NA",
+      "children": [
+        {
+          "name": "C",
+          "type": "NA",
+          "children": [
+            {
+              "name": "Compute",
+              "type": "NA",
+              "lexeme": "Compute"
+            }
+,            {
+              "name": "E",
+              "type": "bool",
+              "children": [
+                {
+                  "name": "A",
+                  "type": "bool",
+                  "children": [
+                    {
+                      "name": "M",
+                      "type": "bool",
+                      "children": [
+                        {
+                          "name": "U",
+                          "type": "bool",
+                          "children": [
+                            {
+                              "name": "P",
+                              "type": "bool",
+                              "children": [
+                                {
+                                  "name": "bool_lit",
+                                  "type": "bool",
+                                  "lexeme": "true"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+,            {
+              "name": ".",
+              "type": "NA",
+              "lexeme": "."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+[
+    {
+      "name": "Compute",
+      "lexeme": "Compute"
+    }
+,    {
+      "name": "bool_lit",
+      "lexeme": "true"
+    }
+,    {
+      "name": ".",
+      "lexeme": "."
+    }
+]

@@ -1,0 +1,14 @@
+[
+    {
+      "name": "Compute",
+      "lexeme": "Compute"
+    }
+,    {
+      "name": "num_lit",
+      "lexeme": "1"
+    }
+,    {
+      "name": ".",
+      "lexeme": "."
+    }
+]
