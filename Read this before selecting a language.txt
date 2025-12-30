@@ -1,0 +1,6 @@
+Students has their freedom to select any language for this project. But the difficulty for different languages are not the same. 
+C language is the most difficult one. Its standard library is very limited. Students need to implement everything by themselves.
+Java is much better than C because errors are easily handled.
+Python is even easier than Java. The package 'csv' can be used to read csv file for the parsing table. The package 'json' can be used to write the result into json files. And the package 're' can simplify the implementation of a lexer.
+
+Please consider these issues when selecting the langauge.

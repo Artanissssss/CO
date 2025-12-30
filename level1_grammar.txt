@@ -1,0 +1,12 @@
+00.		Z -> L
+01.		L -> C
+02.		E -> A
+03.		A -> A + M 
+04.		A -> M
+05.		M -> M * U 
+06.		M -> U
+07.		U -> P
+08.		P -> num_lit 
+09.		P -> bool_lit
+10.		P -> ( E ) 
+11.		C -> Compute E .

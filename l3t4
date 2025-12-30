@@ -1,0 +1,4 @@
+Let num a be 1 . 
+Let bool b be true .
+Let num c be if b then a + 1 else a * 2 .
+Compute c .

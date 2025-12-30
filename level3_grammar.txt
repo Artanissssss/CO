@@ -1,0 +1,23 @@
+00.		Z -> L
+01.		L -> C
+02.		L -> S C 
+03.		S -> S D 
+04.		S -> D
+05.		D -> Let T id be E . 
+06.		T -> num 
+07.		T -> bool
+08.		E -> if B then A else A 
+09.		E -> A
+10.		B -> P < P 
+11.		B -> P = P 
+12.		B -> P 
+13.		A -> A + M 
+14.		A -> M
+15.		M -> M * U 
+16.		M -> U
+17.		U -> P
+18.		P -> num_lit 
+19.		P -> bool_lit
+20.		P -> id 
+21.		P -> ( E ) 
+22.		C -> Compute E .

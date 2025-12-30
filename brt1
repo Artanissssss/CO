@@ -1,0 +1,7 @@
+Let num >> num facten maps x to 
+	if x = 10 then 
+		x 
+	else 
+		x * facten ( x + 1 ) .
+
+Compute facten 1 .

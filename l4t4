@@ -1,0 +1,4 @@
+Let num >> num f maps x to if true then x + 1 else x .
+Let bool b be true .
+Let num >> num g maps a to if b then f 1 else f 2 .
+Compute g 5 .

@@ -1,0 +1,13 @@
+If you are here, it means you have accomplished all features and all bonuses. Then, this 'ultra' is an example of how general purposed computation can be performed in this language. It implements the following functions.
+
+-	'conj' : boolean conjunction
+-	'disj' : boolean disjunction
+-	'negb' : boolean negation
+-	'pred' : number predecessor function, which is f(x)=x-1
+-	'subtract' : number subtraction function. In this language, the symbol '-' is captured by negative numbers. Expressions like '2-1' or '-a' cannot be recognized. Thus, we need to define these functions.
+-	'negi' : number negation, to negate variables
+-	'divhp' : a helper function for integer division
+-	'div' : number division 
+-	'les' : relation "less than". This language only allows relational operators in the guard of an "if" statement (see the grammar). To use relational comparison in calculations, we define this function and several following ones.
+-	'eq' : relation "equal"
+-	'gtr' : relation "greater than"

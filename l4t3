@@ -1,0 +1,2 @@
+Let num >> num f maps x to if true then x + 1 else x .
+Compute f 1 .

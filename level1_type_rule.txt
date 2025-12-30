@@ -1,0 +1,81 @@
+Type rules are only given for the grammar of level 1. The rest is left for students.
+
+
+00.		Z -> L
+
+	Z.type := L.type
+
+
+
+01.		L -> C
+
+	L.type := C.type
+
+
+
+02.		E -> A
+
+	E.type := A.type
+
+
+
+03.		A1 -> A2 + M 
+
+	if A2.type == num and M.type == num then
+		A1.type := num
+	else
+		A1.type := TYPE_ERROR
+
+
+
+04.		A -> M
+
+	A.type := M.type
+
+
+
+05.		M1 -> M2 * U 
+
+	if M2.type == num and U.type == num then 
+		M1.type := num
+	else
+		M1.type := TYPE_ERROR
+
+
+
+06.		M -> U
+
+	M.type := U.type
+
+
+
+07.		U -> P
+
+	U.type := P.type
+
+
+
+08.		P -> num_lit 
+
+	P.type := num	
+
+
+
+09.		P -> bool_lit
+
+	P.type := bool
+
+
+
+10.		P -> ( E ) 
+
+	P.type := E.type
+
+
+
+11.		C -> Compute E .
+
+	if E.type == TYPE_ERROR then 
+		C.type := TYPE_ERROR
+	else
+		C.type := NA

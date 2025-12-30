@@ -1,0 +1,16 @@
+00.		Z -> L
+01.		L -> C
+02.		E -> if B then A else A 
+03.		E -> A
+04.		B -> P < P 
+05.		B -> P = P 
+06.		B -> P 
+07.		A -> A + M 
+08.		A -> M
+09.		M -> M * U 
+10.		M -> U
+11.		U -> P
+12.		P -> num_lit 
+13.		P -> bool_lit
+14.		P -> ( E ) 
+15.		C -> Compute E .
